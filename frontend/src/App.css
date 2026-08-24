@@ -1,0 +1,72 @@
+/* Retro Styling & Vintage Parlour Utilities */
+
+.retro-gold-text {
+  background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 50%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.retro-silver-text {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.retro-parchment {
+  background-color: #1a1512;
+  border: 1px solid #4a3828;
+}
+
+.retro-stamp {
+  border: 2px dashed #b45309;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: var(--font-cinzel), serif;
+}
+
+.retro-corner-flourish {
+  position: relative;
+}
+
+.retro-corner-flourish::before {
+  content: '❖';
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  color: #b45309;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.retro-corner-flourish::after {
+  content: '❖';
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  color: #b45309;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* Dot Leader for Vintage Menus */
+.dot-leader {
+  display: flex;
+  align-items: baseline;
+}
+
+.dot-leader::before {
+  content: "";
+  flex: 1;
+  border-bottom: 2px dotted #574132;
+  margin: 0 10px;
+  order: 2;
+}
+
+.dot-leader .menu-title {
+  order: 1;
+}
+
+.dot-leader .menu-price {
+  order: 3;
+}
+
