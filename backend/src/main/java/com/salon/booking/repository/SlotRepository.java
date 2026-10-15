@@ -12,4 +12,5 @@ public interface SlotRepository extends JpaRepository<Slot, Long> {
     List<Slot> findByShopIdAndDate(Long shopId, LocalDate date);
     List<Slot> findByShopId(Long shopId);
     List<Slot> findByShopIdAndIsBooked(Long shopId, Boolean isBooked);
+    List<Slot> findByShopIdAndDateAndIsBooked(Long shopId, LocalDate date, Boolean isBooked);
 }

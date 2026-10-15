@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface ShopRepository extends JpaRepository<Shop, Long> {
     List<Shop> findByOwnerId(Long ownerId);
+    List<Shop> findByRatingGreaterThanEqual(Double rating);
 }

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
+import AiAssistant from './components/AiAssistant';
 
 import CustomerHome from './pages/CustomerHome';
 import ShopDetail from './pages/ShopDetail';
@@ -59,6 +60,9 @@ function App() {
               </p>
             </div>
           </footer>
+
+          {/* AI Appointment Assistant — floating chat widget */}
+          <AiAssistant />
         </div>
       </Router>
     </AuthProvider>
